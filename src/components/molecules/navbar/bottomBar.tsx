@@ -43,7 +43,7 @@ const NAVIGATIONS = [
 const BottomBar = () => {
   return (
     <Box p={{ xs: 2, md: 8 }} bgcolor={"secondary.main"}>
-      <Container maxWidth={"md"}>
+      <Container maxWidth={"md"} sx={{display: 'flex', flexDirection:'column', alignItems:'center'}}>
         <Typography
           textAlign={"center"}
           fontWeight={900}
@@ -53,8 +53,9 @@ const BottomBar = () => {
         >
           Book your painting project today →
         </Typography>
+        <Button variant='contained' sx={{marginTop: '1rem'}}>Get Free Estimate</Button>
       </Container>
-      <Divider sx={{ marginY: "1rem" }} />
+      <Divider sx={{ marginY: "2rem" }} />
       <Box display={"flex"} flexDirection={"column"}>
         <Image
           src='/assets/Logo2.svg'
@@ -66,7 +67,7 @@ const BottomBar = () => {
           fontWeight={700}
           fontFamily={"lato"}
           color={"primary.dark"}
-          mt={'1.5rem'}
+          mt={"1.5rem"}
         >
           &copy; 2024 HomeSet Pty Ltd
         </Typography>
