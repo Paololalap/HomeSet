@@ -44,7 +44,7 @@ const BottomBar = () => {
   return (
     <Box p={{ xs: 2, md: 8 }} bgcolor={"secondary.main"}>
       <Container
-        maxWidth={"md"}
+        maxWidth={"lg"}
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -57,6 +57,7 @@ const BottomBar = () => {
           fontWeight={900}
           fontFamily={"iowan_old"}
           variant='h2'
+          fontSize={90}
           color={"primary.dark"}
         >
           Book your painting project today →
@@ -69,7 +70,12 @@ const BottomBar = () => {
       <Box
         display={"flex"}
         flexDirection={"column"}
-        sx={{ marginX: "auto", maxWidth: "1444px", border: "5px",  paddingLeft:'30px' }}
+        sx={{
+          marginX: "auto",
+          maxWidth: "1444px",
+          border: "5px",
+          paddingLeft: "30px",
+        }}
       >
         <Image
           src='/assets/Logo2.svg'
@@ -82,7 +88,6 @@ const BottomBar = () => {
           fontFamily={"lato"}
           color={"primary.dark"}
           mt={"1.5rem"}
-         
         >
           &copy; 2024 HomeSet Pty Ltd
         </Typography>

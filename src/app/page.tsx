@@ -81,14 +81,14 @@ export default function Home() {
               // bgcolor={"red"}
               display={"flex"}
             >
-              <Box maxWidth={500}>
+              <Box maxWidth={{ xs: "500px", lg: "700px" }}>
                 <Typography
                   fontWeight={900}
                   fontFamily={"iowan_old"}
                   variant='h2'
                   color={"primary.dark"}
                   lineHeight={"4rem"}
-                  sx={{ fontSize: { xs: "3rem", sm: "3.5rem", md: "inherit" } }}
+                  sx={{ fontSize: { xs: "3rem", sm: "3.5rem", lg: "80px" } }}
                 >
                   Paint your home the easy way
                 </Typography>
@@ -100,6 +100,7 @@ export default function Home() {
                     
                   </Typography> */}
                 <Typography
+                  maxWidth={500}
                   fontFamily={"Lato"}
                   fontWeight={"900"}
                   color={"primary.dark"}
@@ -170,6 +171,7 @@ export default function Home() {
             xs={12}
             lg={6}
             md={6}
+            flex={1}
           >
             <TextCard
               title='We make it easy to complete your painting project'
@@ -178,9 +180,9 @@ export default function Home() {
               subtitle3='3. Execute: Relax while our skilled team delivers the highest quality paint job in your home, giving you complete peace of mind'
             />
           </Grid2>
-          <Grid2 position={"relative"} xs={12} md={6} lg={6} xl={6}>
+          <Grid2 position={"relative"} xs={12} md={6} lg={6} xl={6} flex={1}>
             <Image
-              src='./assets/home_inside_1.png'
+              src='./assets/home_construction.png'
               style={{ flex: 1, width: "100%" }}
               alt=''
             />
@@ -210,13 +212,16 @@ export default function Home() {
             >
               <Typography
                 textAlign={"center"}
-                variant='h3'
                 color={"primary.dark"}
                 fontWeight={900}
-                sx={{ fontSize: { xs: "1.5rem", md: "48px" } }}
+                sx={{ fontSize: { xs: "1.5rem", md: "40px" } }}
+                fontFamily={"lato_black"}
               >
-                Proudly serving the Inner Sydney area where we have been busy
-                painting over 1,474 homes
+                Proudly serving the{" "}
+                <span style={{ textDecoration: "underline" }}>
+                  Inner Sydney
+                </span>{" "}
+                area where we have been busy painting over 1,474 homes
               </Typography>
               <Button variant='contained' sx={{ margin: "0 auto" }}>
                 Get Free Estimate
@@ -242,7 +247,7 @@ export default function Home() {
           >
             <TextCard2
               title='No hidden fees'
-              title2='No Surprises'
+              title2='No surprises'
               subtitle='We believe that all homeowners deserve access to high quality craftsmanship, regardless of who they are or where they live.'
               subtitle2="With HomeSet, there's no more guessing about how much your next paint project will cost - our online estimate tool and flat-rate pricing ensures you'll always know exactly what to expect."
             />
@@ -421,18 +426,27 @@ export default function Home() {
                     fontWeight={900}
                     variant='h2'
                     color={"primary.dark"}
-                    sx={{fontSize:{xs:'2.5rem', lg:'60px'}}}
+                    sx={{ fontSize: { xs: "2.5rem", lg: "60px" } }}
                   >
                     Meet our talented Inner Sydney team
                   </Typography>
                 </Grid2>
                 <Grid2>
-                  <Typography fontFamily={"Lato"} color={"black"}>
+                  <Typography
+                    fontFamily={"lato"}
+                    color={"black"}
+                    sx={{ fontSize: "25px", fontWeight: "400" }}
+                  >
                     It can be uncomfortable inviting strangers into your home,
                     so let&#39;s get acquainted - here a few examples of the
                     talented people we have on our team!
                   </Typography>
-                  <Typography fontFamily={"Lato"} color={"black"} mt={"1rem"}>
+                  <Typography
+                    fontFamily={"lato"}
+                    color={"black"}
+                    mt={"1rem"}
+                    sx={{ fontSize: "25px", fontWeight: "400" }}
+                  >
                     We train our painters from apprentice to seasoned veteran,
                     to ensure that we always deliver the highest quality paint
                     work in your home.

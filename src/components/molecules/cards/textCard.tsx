@@ -53,11 +53,11 @@ export default function TextCard(props: Props) {
       flexDirection={"column"}
       justifyContent={"center"}
       alignItems={"flex-start"}
-      padding={{ lg: 8, md: 4, xs: 4 }}
+      paddingX={{ lg: 8, md: 4, xs: 4 }}  
       borderRadius={0.5}
       bgcolor={bgcolor}
       flex={1}
-    >
+    > 
       <Grid2 container spacing={2.5}>
         <Grid2>
           <Typography
@@ -65,7 +65,7 @@ export default function TextCard(props: Props) {
             fontWeight={900}
             variant='h2'
             color={"white"}
-            sx={{ fontSize: { xs: "2.5rem", lg:'2.75rem',xl: "60px" } }}
+            sx={{ fontSize: { xs: "2.5rem", lg: "2.75rem", xl: "55px" } }}
           >
             {title}
           </Typography>
@@ -78,24 +78,36 @@ export default function TextCard(props: Props) {
               variant='h2'
               color='white'
               marginTop={"-1rem"}
-              sx={{ fontSize: { xs: "2.5rem", lg:'2.75rem',xl: "60px" } }}
+              sx={{ fontSize: { xs: "2.5rem", lg: "2.75rem", xl: "55px" } }}
             >
               {title2}
             </Typography>
           </Grid2>
         )}
         <Grid2>
-          <Typography fontFamily={"Lato"} color={"#ddd"}>
+          <Typography
+            fontFamily={"Lato"}
+            color={"#ddd"}
+            sx={{ fontSize: { lg: "23px" } }}
+          >
             {renderStyledSubtitle(subtitle)}
           </Typography>
         </Grid2>
         <Grid2>
-          <Typography fontFamily={"Lato"} color={"#ddd"}>
+          <Typography
+            fontFamily={"Lato"}
+            color={"#ddd"}
+            sx={{ fontSize: { lg: "23px" } }}
+          >
             {renderStyledSubtitle(subtitle2)}
           </Typography>
         </Grid2>
         <Grid2>
-          <Typography fontFamily={"Lato"} color={"#ddd"}>
+          <Typography
+            fontFamily={"Lato"}
+            color={"#ddd"}
+            sx={{ fontSize: { lg: "23px" } }}
+          >
             {renderStyledSubtitle(subtitle3)}
           </Typography>
         </Grid2>

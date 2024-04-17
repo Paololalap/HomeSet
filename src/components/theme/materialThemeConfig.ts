@@ -37,7 +37,6 @@ const theme = createTheme({
 
 export const materialThemeConfig = createTheme(theme, {
   typography: {
-    fontFamily: "Lato iowan_old",
     fontSize: 18,
     button: {
       [theme.breakpoints.down("lg")]: {
