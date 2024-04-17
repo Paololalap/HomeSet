@@ -7,6 +7,14 @@ declare module "@mui/material/Button" {
   }
 }
 
+const customBreakpoints = {
+  xs: 0,
+  sm: 768,
+  md: 1024,
+  lg: 1364,
+  xl: 1500,
+};
+
 declare module "@mui/material/styles" {
   interface Theme {
     status: {
@@ -32,6 +40,9 @@ const theme = createTheme({
     secondary: {
       main: "#F2F8E2",
     },
+  },
+  breakpoints: {
+    values: customBreakpoints,
   },
 });
 

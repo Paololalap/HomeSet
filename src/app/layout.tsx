@@ -28,7 +28,7 @@ export default function RootLayout({
           <StyledEngineProvider injectFirst>
             <Navbar />
           </StyledEngineProvider>
-          <Box mt={{ xs: 8, md: 8, lg: 10 }}>{children}</Box>
+          <Box>{children}</Box>
           <BottomBar />
         </MaterialThemeProvider>
       </body>

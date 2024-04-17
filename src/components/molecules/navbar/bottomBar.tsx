@@ -42,9 +42,9 @@ const NAVIGATIONS = [
 
 const BottomBar = () => {
   return (
-    <Box p={{ xs: 2, md: 8 }} bgcolor={"secondary.main"}>
-      <Container
-        maxWidth={"lg"}
+    <Box padding={"50px 32.52px"} bgcolor={"secondary.main"} marginTop={"50px"}>
+      <Box
+        maxWidth={"1265.66px"}
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -57,16 +57,36 @@ const BottomBar = () => {
           fontWeight={900}
           fontFamily={"iowan_old"}
           variant='h2'
-          fontSize={90}
+          fontSize={{xs:'4rem',lg:80}}
           color={"primary.dark"}
+          lineHeight={'90px'}
         >
           Book your painting project today →
         </Typography>
-        <Button variant='contained' sx={{ marginTop: "1rem" }}>
+        <Button
+          variant='contained'
+          sx={{
+            backgroundColor: "#038732",
+            paddingY: "20px",
+            paddingX: "40px",
+            width: "221px",
+            height: "62px",
+            borderRadius: "100px",
+            color:'#FEFFF8',
+            whiteSpace: "nowrap",
+            fontWeight: "900",
+            fontSize: "18px",
+            lineHeight: "22px",
+            margin: "0 auto",
+            marginTop: "41.63px",
+          }}
+        >
           Get Free Estimate
         </Button>
-      </Container>
-      <Divider sx={{ marginY: "2rem", marginX: "auto", maxWidth: "1444px" }} />
+      </Box>
+      <Divider
+        sx={{ marginY: "2rem", marginX: "auto", maxWidth: "1495.9px" }}
+      />
       <Box
         display={"flex"}
         flexDirection={"column"}
@@ -74,22 +94,23 @@ const BottomBar = () => {
           marginX: "auto",
           maxWidth: "1444px",
           border: "5px",
-          paddingLeft: "30px",
+          // paddingLeft: "30px",
         }}
       >
         <Image
+          sx={{ width: "276.73px", height: "59px" }}
           src='/assets/Logo2.svg'
           alt='Next.js Logo'
-          width={"15%"}
-          style={{ minWidth: 120 }}
         />
         <Typography
           fontWeight={700}
           fontFamily={"lato"}
           color={"primary.dark"}
-          mt={"1.5rem"}
+          mt={"41.63px"}
+          fontSize={'20.81px'}
+          lineHeight={"74.28px"}
         >
-          &copy; 2024 HomeSet Pty Ltd
+          © 2024 HomeSet Pty Ltd
         </Typography>
       </Box>
     </Box>
