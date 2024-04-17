@@ -455,128 +455,6 @@ export default function Home() {
             </Card>
           </Box>
         </Grid2>
-        {/* <Grid2
-          container
-          gap={"52.03px"}
-          flexWrap={"nowrap"}
-          marginTop={"50px"}
-          maxWidth={"1493.87px"}
-          marginX={"auto"}
-          height={"800px"}
-          display={"flex"}
-          paddingX={{ xs: "20px", xl: "initial" }}
-        >
-          <Grid2
-            borderRadius={"30px"}
-            overflow={"hidden"}
-            width={"100%"}
-            height={"100%"}
-            display='flex'
-            flexDirection='column'
-            xs={12}
-            lg={6}
-            md={6}
-          >
-            <Box
-              display={"flex"}
-              flexDirection={"column"}
-              justifyContent={"center"}
-              alignItems={"flex-start"}
-              paddingLeft={{ lg: "80px", md: 4, xs: 4 }}
-              borderRadius={"30px"}
-              bgcolor={"#F2F8E2"}
-              flex={1}
-            >
-              <Grid2 container spacing={2.5}>
-                <Grid2>
-                  <Typography
-                    fontFamily={"iowan_old"}
-                    fontWeight={900}
-                    variant='h2'
-                    color={"#004318"}
-                    width={"610.07px"}
-                    sx={{
-                      fontSize: { xs: "2.5rem", lg: "2.75rem", xl: "55px" },
-                      lineHeight: "65px",
-                    }}
-                  >
-                    Meet our talented Inner Sydney team
-                  </Typography>
-                </Grid2>
-                <Grid2 marginTop={"40px"} paddingY={0}>
-                  <Typography
-                    fontFamily={"Lato"}
-                    color={"black"}
-                    fontWeight={400}
-                    sx={{
-                      fontSize: { lg: "25px" },
-                      width: "554px",
-                      lineHeight: "30px",
-                    }}
-                  >
-                    It can be uncomfortable inviting strangers into your home,
-                    so let&apos;s get acquainted - here a few examples of the
-                    talented people we have on our team!
-                  </Typography>
-                  <Typography
-                    fontFamily={"Lato"}
-                    color={"black"}
-                    fontWeight={400}
-                    sx={{
-                      fontSize: { lg: "25px" },
-                      width: "554px",
-                      lineHeight: "30px",
-                      marginTop: "20.81px",
-                    }}
-                  >
-                    We train our painters from apprentice to seasoned veteran,
-                    to ensure that we always deliver the highest quality paint
-                    work in your home.
-                  </Typography>
-                </Grid2>
-                <Grid2 marginTop={"40px"}>
-                  <Button
-                    variant='contained'
-                    sx={{
-                      backgroundColor: "#038732",
-                      paddingY: "20px",
-                      paddingX: "40px",
-                      width: "224px",
-                      height: "62px",
-                      borderRadius: "100px",
-                      whiteSpace: "nowrap",
-                      fontWeight: "900",
-                      fontSize: "18px",
-                      lineHeight: "22px",
-                      margin: "0 auto",
-                    }}
-                  >
-                    Get Free Estimate
-                  </Button>
-                </Grid2>
-              </Grid2>
-            </Box>
-          </Grid2>
-          <Grid2
-            position={"relative"}
-            xs={12}
-            width={"100%"}
-            height={"100%"}
-            md={6}
-            lg={6}
-            xl={6}
-            flex={1}
-            display='flex'
-            alignItems='stretch'
-            borderRadius={"30px"}
-          >
-            <Image
-              src='./assets/image 43.png'
-              style={{ flex: 1, width: "100%", height: "100%" }}
-              alt=''
-            />
-          </Grid2>
-        </Grid2> */}
         <Grid2
           container
           maxWidth={"1493.87px"}
@@ -649,7 +527,7 @@ export default function Home() {
                       sx={{ fontSize: { lg: "25px" }, lineHeight: "30px" }}
                     >
                       It can be uncomfortable inviting strangers into your home,
-                      so let's get acquainted - here a few examples of the
+                      so let&apos;s get acquainted - here a few examples of the
                       talented people we have on our team!
                     </Typography>
                     <Typography
