@@ -47,6 +47,7 @@ const TextCard = (props: Props) => {
             fontFamily={"iowan_old"}
             fontWeight={900}
             variant='h3'
+            sx={{ fontSize: { xs: "2.25rem", md: "48px" } }}
             color={"white"}
           >
             {title}
@@ -60,6 +61,7 @@ const TextCard = (props: Props) => {
               variant='h3'
               color='white'
               marginTop={"-1rem"}
+              sx={{ fontSize: { xs: "2.25rem", md: "48px" } }}
             >
               {title2}
             </Typography>
@@ -69,7 +71,7 @@ const TextCard = (props: Props) => {
           <Typography fontFamily={"Lato"} color={"white"}>
             {subtitle}
           </Typography>
-          <Typography fontFamily={"Lato"} color={"white"} mt={'1rem'}>
+          <Typography fontFamily={"Lato"} color={"white"} mt={"1rem"}>
             {subtitle2}
           </Typography>
         </Grid2>

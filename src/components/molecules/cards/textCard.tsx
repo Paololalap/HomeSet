@@ -4,8 +4,8 @@ import {
   BoxProps,
   Button,
   ButtonProps,
-  Theme,
   Typography,
+  useTheme,
 } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
@@ -13,20 +13,21 @@ type Props = {
   title: string;
   title2?: string;
   subtitle: string;
-  subtitle2?: string;
+  subtitle2?: string; 
   subtitle3?: string;
   bgcolor?: BoxProps["color"];
   buttonVariant?: ButtonProps["variant"];
 };
 
-const TextCard = (props: Props) => {
+export default function TextCard(props: Props) {
+  const theme = useTheme();
   const {
     title,
     title2,
     subtitle,
     subtitle2,
     subtitle3,
-    bgcolor = "primary.dark",
+    bgcolor = theme.palette.primary.dark,
     buttonVariant = "contained",
   } = props;
 
@@ -64,7 +65,7 @@ const TextCard = (props: Props) => {
           <Typography
             fontFamily={"iowan_old"}
             fontWeight={900}
-            variant='h3'
+            variant={theme.breakpoints.between("xs", "sm") ? "h4" : "h3"}
             color={"white"}
           >
             {title}
@@ -75,9 +76,9 @@ const TextCard = (props: Props) => {
             <Typography
               fontFamily='iowan_old'
               fontWeight={900}
-              variant='h3'
+              variant={theme.breakpoints.between("xs", "sm") ? "h4" : "h3"}
               color='white'
-              marginTop={'-1rem'}
+              marginTop={"-1rem"}
             >
               {title2}
             </Typography>
@@ -104,6 +105,4 @@ const TextCard = (props: Props) => {
       </Grid2>
     </Box>
   );
-};
-
-export default TextCard;
+}
