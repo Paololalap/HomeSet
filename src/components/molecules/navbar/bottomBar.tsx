@@ -69,7 +69,7 @@ const BottomBar = () => {
       <Box
         display={"flex"}
         flexDirection={"column"}
-        sx={{ marginX: "auto", maxWidth: "1444px", border: "5px" }}
+        sx={{ marginX: "auto", maxWidth: "1444px", border: "5px",  paddingLeft:'30px' }}
       >
         <Image
           src='/assets/Logo2.svg'
@@ -82,6 +82,7 @@ const BottomBar = () => {
           fontFamily={"lato"}
           color={"primary.dark"}
           mt={"1.5rem"}
+         
         >
           &copy; 2024 HomeSet Pty Ltd
         </Typography>
