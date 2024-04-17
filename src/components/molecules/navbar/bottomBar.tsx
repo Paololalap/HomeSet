@@ -43,7 +43,15 @@ const NAVIGATIONS = [
 const BottomBar = () => {
   return (
     <Box p={{ xs: 2, md: 8 }} bgcolor={"secondary.main"}>
-      <Container maxWidth={"md"} sx={{display: 'flex', flexDirection:'column', alignItems:'center'}}>
+      <Container
+        maxWidth={"md"}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          marginX: "auto",
+        }}
+      >
         <Typography
           textAlign={"center"}
           fontWeight={900}
@@ -53,10 +61,16 @@ const BottomBar = () => {
         >
           Book your painting project today →
         </Typography>
-        <Button variant='contained' sx={{marginTop: '1rem'}}>Get Free Estimate</Button>
+        <Button variant='contained' sx={{ marginTop: "1rem" }}>
+          Get Free Estimate
+        </Button>
       </Container>
-      <Divider sx={{ marginY: "2rem" }} />
-      <Box display={"flex"} flexDirection={"column"}>
+      <Divider sx={{ marginY: "2rem", marginX: "auto", maxWidth: "1444px" }} />
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        sx={{ marginX: "auto", maxWidth: "1444px", border: "5px" }}
+      >
         <Image
           src='/assets/Logo2.svg'
           alt='Next.js Logo'

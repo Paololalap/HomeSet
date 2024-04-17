@@ -5,7 +5,6 @@ import {
   Button,
   ButtonProps,
   Typography,
-  useTheme,
 } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
@@ -20,14 +19,13 @@ type Props = {
 };
 
 export default function TextCard(props: Props) {
-  const theme = useTheme();
   const {
     title,
     title2,
     subtitle,
     subtitle2,
     subtitle3,
-    bgcolor = theme.palette.primary.dark,
+    bgcolor = "primary.dark",
     buttonVariant = "contained",
   } = props;
 
@@ -65,8 +63,9 @@ export default function TextCard(props: Props) {
           <Typography
             fontFamily={"iowan_old"}
             fontWeight={900}
-            variant={theme.breakpoints.between("xs", "sm") ? "h4" : "h3"}
+            variant='h2'
             color={"white"}
+            sx={{ fontSize: { xs: "2.5rem", lg:'2.75rem',xl: "60px" } }}
           >
             {title}
           </Typography>
@@ -76,9 +75,10 @@ export default function TextCard(props: Props) {
             <Typography
               fontFamily='iowan_old'
               fontWeight={900}
-              variant={theme.breakpoints.between("xs", "sm") ? "h4" : "h3"}
+              variant='h2'
               color='white'
               marginTop={"-1rem"}
+              sx={{ fontSize: { xs: "2.5rem", lg:'2.75rem',xl: "60px" } }}
             >
               {title2}
             </Typography>

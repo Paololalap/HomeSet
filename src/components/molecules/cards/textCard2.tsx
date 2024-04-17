@@ -76,7 +76,7 @@ const TextCard = (props: Props) => {
           </Typography>
         </Grid2>
         <Grid2>
-          <Button variant={buttonVariant}>Learn More</Button>
+          <Button variant={buttonVariant}>Get Free Estimate</Button>
         </Grid2>
       </Grid2>
     </Box>
